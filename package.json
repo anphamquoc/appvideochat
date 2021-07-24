@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "concurrently --kill-others \"node server.js\" \"peerjs --port 9000 --key peerjs --path appchatvideo.herokuapp.com\""
   },
   "keywords": [],
   "author": "",
